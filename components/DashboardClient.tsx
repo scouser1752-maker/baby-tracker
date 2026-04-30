@@ -102,9 +102,28 @@ export function DashboardClient({
           <h1 className="mt-2 text-3xl font-semibold tracking-tight">{child.name}</h1>
           <p className="mt-2 text-sm text-slate-400">Минимальный семейный трекер кормлений и сна</p>
         </div>
-        <a href="/history" className="rounded-full border px-4 py-2 text-sm text-slate-200">
-          История
-        </a>
+       <div className="flex flex-wrap justify-end gap-2">
+  <a
+    href="/add"
+    className="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200"
+  >
+    Добавить
+  </a>
+
+  <a
+    href="/analytics"
+    className="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200"
+  >
+    Аналитика
+  </a>
+
+  <a
+    href="/history"
+    className="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200"
+  >
+    История
+  </a>
+</div>
       </header>
 
       {error ? <div className="rounded-2xl border border-rose-500/50 bg-rose-500/10 p-4 text-sm text-rose-200">{error}</div> : null}
